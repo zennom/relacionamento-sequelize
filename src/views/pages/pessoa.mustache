@@ -7,21 +7,22 @@
 </head>
 <body>
     <h1> Lista de Usuários do Banco </h1>
-
 <table border="1" width="100%">
     <tr>
         <th>ID</th>
         <th>NOME</th>
         <th>ID CURSO PREFERIDO</th>
+        <th>CURSO PREFERIDO</th>
     </tr>
 
-    {{#pessoa}}
+    {{#pessoasComCursos}}
     <tr>
-        <td>{{id}} </td> <!-- exibir o id -->
+        <td>{{idPessoa}} </td> <!-- exibir o id -->
         <td>{{nome}} </td> <!-- exibir o nome -->
         <td>{{cursoPreferido}} </td> <!-- exibir o id do curso preferido -->
+        <td>{{curso.nomeCurso}} </td> <!-- exibir o nome do curso preferido -->
     </tr>
-    {{/pessoa}}
+    {{/pessoasComCursos}}
 
 </table>
 
