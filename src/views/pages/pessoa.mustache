@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Lista de Usuários do Banco </h1>
+
+<table border="1" width="100%">
+    <tr>
+        <th>ID</th>
+        <th>NOME</th>
+        <th>ID CURSO PREFERIDO</th>
+        <th>CURSO PREFERIDO</th>
+    </tr>
+
+    {{#pessoa}}
+    <tr>
+        <td>{{id}} </td> <!-- exibir o id -->
+        <td>{{nome}} </td> <!-- exibir o nome -->
+        <td>{{cursoPreferido}} </td> <!-- exibir o curso preferido -->
+        <td>{{cursoNome}} </td> 
+    </tr>
+    {{/pessoa}}
+
+</table>
+
+</body>
+</html>
