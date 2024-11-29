@@ -1,12 +1,10 @@
 import { Model, DataTypes } from 'sequelize';
 import { sequelize } from '../instances/mysql';
-
 export interface PessoaInstance extends Model {
   id: number;
   nome: string;
   cursoPreferido: number;  // A chave estrangeira para cursos
 }
-
 export const Pessoa = sequelize.define<PessoaInstance>('Pessoa', {
   id: {
     primaryKey: true,

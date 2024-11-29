@@ -12,7 +12,7 @@ export const Curso = sequelize.define<CursoInstance>('Curso', {
     type: DataTypes.INTEGER,
     autoIncrement: true,
   },
-  nomeCurso: {  // Corrigir o nome do campo para 'nomeCurso', se necessário
+  nomeCurso: { 
     type: DataTypes.STRING,
     allowNull: false,
   },
