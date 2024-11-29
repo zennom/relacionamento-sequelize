@@ -5,7 +5,6 @@ export interface PessoaInstance extends Model {
   id: number;
   nome: string;
   cursoPreferido: number;  // A chave estrangeira para cursos
-  cursoNome: string;
 }
 
 export const Pessoa = sequelize.define<PessoaInstance>('Pessoa', {
@@ -30,4 +29,3 @@ export const Pessoa = sequelize.define<PessoaInstance>('Pessoa', {
   tableName: 'pessoas',
   timestamps: false,
 });
-
